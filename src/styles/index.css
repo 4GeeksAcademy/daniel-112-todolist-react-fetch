@@ -21,7 +21,7 @@ body {
 
 
 
-/* PARA EL BOTÓN, CON HOVER Y CON OPACIDAD */
+/* PARA EL BOTÓN, CON HOVER O CON OPACIDAD */
 button {
     display: none;
 }
@@ -60,4 +60,8 @@ button:hover {
     width: 69%;
     height: 0.5em;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+input:focus {
+    outline: none;
 }
