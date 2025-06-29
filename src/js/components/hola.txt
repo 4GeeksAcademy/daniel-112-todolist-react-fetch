@@ -1,0 +1,10 @@
+
+
+
+<p className=" align-self-end text-end m-0">
+
+<p className="flex-grow-1 align-self-start m-0 text-start">{item}</p>
+
+
+<p className="flex-grow-1 m-0 text-start">{item}</p>
+                        <p className="m-0">

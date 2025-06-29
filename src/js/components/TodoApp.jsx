@@ -18,6 +18,20 @@ function TodoApp() {
         };
 	};
 
+
+    function addTaskButton() {
+		
+        const inputElement = document.querySelector('.input');
+        const inputValue = inputElement.value.trim();
+        
+        if (inputValue) { 
+            setTaskList(taskList.concat(inputValue));
+            inputElement.value = "";
+        } else { 
+            alert("ℹ️EMPTY TASKℹ️\nYou need to write something");
+        };
+    };
+
     function taskCounter (taskAmount) {
 
         if (taskAmount === 0) {
@@ -42,17 +56,18 @@ function TodoApp() {
 
 
                 {/* INPUT DE TAREAS */}
-                <li className="border-0 border-bottom align-self-center fs-1 my-2">
-                    <input type="text" className="w-100 px-0 border-0" placeholder="➕ Write a task and press Enter" onKeyDown={addTask} />
+                <li className="d-flex border-0 border-bottom fs-1 my-2">
+                    <input type="text" className="flex-grow-1 px-0 border-0 input" placeholder="➕ Write a task" onKeyDown={addTask} />
+                    <button className="btn btn-primary m-3" onClick={addTaskButton}>Add</button>
                 </li>
 
 
                 {/* ADICIÓN DE TAREAS CON .MAP */}
                 {taskList.map((item, i) => (
 
-                    <li key={i} className="d-flex border-0 border-bottom align-self-center fs-1 my-2">
-                        <p className="flex-grow-1 align-self-start m-0 text-start">{item}</p>
-                        <p className=" align-self-end text-end m-0">
+                    <li key={i} className="d-flex border-0 border-bottom fs-1 my-2">
+                        <p className="flex-grow-1 m-0 text-start">{item}</p>
+                        <p className="m-0">
                             <button className="p-0 border-0 bg-white" onClick={() => setTaskList(taskList.filter((_, index) => index !== i))}> ❌ </button>
                         </p>
                     </li>
@@ -76,5 +91,6 @@ function TodoApp() {
         </div>
 	);
 };
+
 
 export default TodoApp;

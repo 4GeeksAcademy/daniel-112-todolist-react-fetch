@@ -22,9 +22,9 @@ body {
 
 
 /* PARA EL BOTÓN, CON HOVER O CON OPACIDAD */
-button {
+/* button {
     display: none;
-}
+} */
 li:hover button {
     display: block;
 }
