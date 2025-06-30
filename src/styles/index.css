@@ -22,10 +22,10 @@ body {
 
 
 /* PARA EL BOTÓN, CON HOVER O CON OPACIDAD */
-button {
+.eliminate-cross {
     display: none;
 }
-li:hover button {
+li:hover .eliminate-cross {
     display: block;
 }
 /* button {     

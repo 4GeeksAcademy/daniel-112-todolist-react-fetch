@@ -68,7 +68,7 @@ function TodoApp() {
                     <li key={i} className="d-flex border-0 border-bottom fs-1 my-2">
                         <p className="flex-grow-1 m-0 text-start">{item}</p>
                         <p className="m-0">
-                            <button className="p-0 border-0 bg-white" onClick={() => setTaskList(taskList.filter((_, index) => index !== i))}> ❌ </button>
+                            <button className="p-0 border-0 bg-white eliminate-cross" onClick={() => setTaskList(taskList.filter((_, index) => index !== i))}> ❌ </button>
                         </p>
                     </li>
 
