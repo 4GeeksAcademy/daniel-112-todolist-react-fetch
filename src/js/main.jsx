@@ -9,10 +9,10 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import TodoApp from './components/TodoApp';
+import TodoAppFetch from './components/TodoAppFetch';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TodoApp/>
+    <TodoAppFetch/>
   </React.StrictMode>,
 )

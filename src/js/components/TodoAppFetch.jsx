@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Fetch() {
+function TodoAppFetch() {
 
 	const [taskList, setTaskList] = useState([]);
     const apiURL = "https://playground.4geeks.com/todo";
@@ -152,4 +152,4 @@ function Fetch() {
 };
 
 
-export default Fetch;
+export default TodoAppFetch;
